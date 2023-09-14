@@ -1,60 +1,41 @@
-body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ymountain7</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="stripe"></div>
+                <div class="stripe"></div>
+                <div class="stripe"></div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="products.html">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-header {
-    background-color: #5e5d5c;
-    color: #fff;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    <main>
+        <h1>Welcome to Our Website</h1>
+        <p>This is a brief explanation of our products and services.</p>
+    </main>
 
-nav {
-    display: flex;
-    align-items: center;
-}
+    <footer>
+        <!-- Your footer content goes here -->
+    </footer>
 
-.menu-icon {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    margin-right: 20px;
-}
-
-.stripe {
-    width: 30px;
-    height: 3px;
-    background-color: #fff;
-    margin: 3px 0;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links li {
-    margin-right: 20px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-}
-
-main {
-    padding: 20px;
-}
-
-footer {
-    background-color: #f5f5f5;
-    padding: 20px;
-    text-align: center;
-}
+    <script>
+        function toggleMenu() {
+            var navLinks = document.getElementById("navLinks");
+            navLinks.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
