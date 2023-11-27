@@ -1,0 +1,252 @@
+$color_1: #9f9f9f;
+$color_2: rgb(177, 177, 177);
+$color_3: #fff;
+$color_4: #4f4f4f;
+$color_5: #aaaaaa;
+$font-family_1: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, sans-serif;
+$background-color_1: #333333;
+$background-color_2: #f2f2f2;
+$background-color_3: #f5f5f5;
+$background-color_4: #081b30;
+$background-color_5: #08315e;
+
+/*# sourceMappingURL=products.css.map */
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font-family_1;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: $background-color_1;
+    color: $color_1;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        margin-right: 40px;
+        max-width: 60px;
+    }
+}
+
+main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-top: 20px;
+        margin-bottom: 30px;
+
+        h1 {
+            margin-bottom: 10px;
+        }
+    }
+
+    article {
+        margin: 30px;
+        width: 60%;
+        font-size: 15px;
+    }
+}
+
+.hovercolor {
+    &:hover {
+        color: $color_2;
+    }
+}
+
+.stripe {
+    &:hover {
+        color: $color_2;
+    }
+}
+
+.product-table {
+    border-collapse: collapse;
+    width: 100%;
+
+    th {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+        background-color: $background-color_2;
+    }
+
+    td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    tr {
+        &:hover {
+            background-color: $background-color_3;
+        }
+    }
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    li {
+        margin-inline: 40px;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 24px;
+        color: $color_3;
+    }
+}
+
+footer {
+    background-color: $background-color_3;
+    padding: 15px;
+    text-align: left;
+    background-color: $background-color_3;
+    color: $color_1;
+    padding: 15px;
+    text-align: left;
+}
+
+.logos {
+    display: flex;
+    justify-content: safe;
+    font-size: 30px;
+    gap: 30px;
+    color: $color_1;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    gap: 30px;
+    color: $color_1;
+
+    a {
+        color: $color_4;
+        color: $color_4;
+
+        &:hover {
+            color: $color_5;
+            color: $color_5;
+        }
+    }
+}
+
+#scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: $background-color_4;
+    color: $color_3;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+
+    &:hover {
+        background-color: $background-color_5;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        background-color: $background-color_1;
+        color: $color_1;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            margin-right: 10px;
+            max-width: 40px;
+        }
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin-inline: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 14px;
+            color: $color_3;
+        }
+    }
+
+    .container-wide {
+        grid-column: 1/2;
+        margin-bottom: 0px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-container {
+        display: grid;
+        grid-column: auto;
+        grid-template-columns: 1fr;
+        margin-bottom: 0;
+    }
+
+    .container {
+        margin-bottom: 7px;
+        margin: 0px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logos {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        gap: 30px;
+        color: $color_1;
+
+        a {
+            color: $color_4;
+
+            &:hover {
+                color: $color_5;
+            }
+        }
+    }
+}
